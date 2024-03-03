@@ -25,4 +25,4 @@ More can be added, for example:
 As you can see, you'll add a "checkbox" with value "Remote" in Notion for this one.
 
 
-Docker version has a 24h sleep.
+Docker version has a 24h sleep, but you should probably just run it as a cron job
