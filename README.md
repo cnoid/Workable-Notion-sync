@@ -18,11 +18,12 @@ Prerequisites:
 More can be added, for example:
 `"Remote": "Yes" if job['location']['workplace_type'] == "remote" else "No",`
 ```py
-                                "Remote": {
-                                    "checkbox": job["Remote"] == "Yes"
-                                },
+"Remote": {
+    "checkbox": job["Remote"] == "Yes"
+},
 ```
 As you can see, you'll add a "checkbox" with value "Remote" in Notion for this one.
 
 
-Docker version has a 24h sleep, but you should probably just run it as a cron job
+Docker version has a 24h sleep, but you should probably just run it as a cron job:
+`0 0 * * * /usr/bin/docker run --rm workable-notion-sync`
